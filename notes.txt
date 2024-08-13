@@ -1,0 +1,90 @@
+timeseries data
+
+trend
+seasonality
+noise irregularity
+
+it can be
+-stationary
+ |
+  - constant mean, variance, autocorelation 
+-non-stationary
+
+we assume data to be stationary if it Is not we need to convert to stationary
+
+methods to know if its stationary
+|
+- ADF(augmented dickey fuller)
+-
+
+then we do differencing if series is non stationary or log transformation or sqrt transformation of box cox 
+
+
+
+AR series (Auto regressor)  check pACF
+
+MA  (Moving Average)  CHECK acf
+
+
+AR process me k significant spikes in pacf and decay in acf 
+and vice versa for MA
+
+
+auto regressor take into account previous value of time steps and their weightage is linear to find out which time steps should be used we see pacf and only take significant timesteps 
+
+in moving average we take into account error in prediction in previous time steps to see which time steps to use we use acf
+
+
+in ARMA 
+we use combination of both
+
+In ARIMA we use combination of ARMA before differencing so we do not have to difference it already before giving to ARMA
+
+
+
+BIC score and AIC Score
+
+adf test-- null hypothesis --series is not stationary p<0.05 reject null hypothesis
+kpss test--null hypothesis --series is stationary
+
+
+
+used smoothning  techniques (it is used for visualizing and not forecasting) 
+
+- 3 mean centering ]
+                   ]- moving average of 3 or 5 values
+- 5 mean centering ]
+
+
+-2 mean smoothening 
+-4 mean smoothening
+
+
+it is difficult to do forecasting in mean centerd averagw because we do not have last value 
+Trailing Moving Average
+we have last value 
+
+simple exponential smoothening
+Double exponential smoothening 
+Triple exponential smoothning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.amazon.in/dp/B09P5DTML6/ref=sbl_dpx_in-home-improvement-bathroom-shelves_B08BS2BGWT_0?th=1
+
+https://www.amazon.in/Miramar-Stylists-Professional-Straightener-Dressing/dp/B09BBBN91M/ref=sr_1_12?crid=3DYRRQEEMTS88&dib=eyJ2IjoiMSJ9.iPp3zjh0caU6Xujv2t5eyemZrmoPQpFH6rX3I66SLk5OTdz37N0drywC7a0_4x9Tet5L_bNz3H07tjYqJ63KKL88ORWnSVIevV6xKIBJWrWYuDWEuhOHJ4jrLD6ahBiAIZxk63k8vuxaXMHWvv0QPGHo0Tr_H_h4la3naKL5XY5LqkpbL4cF0MgK4XsAQOkir2Z5uCPKoppbW5J8Qzx7gUQzAL6Ixq-1Xc_-Y-oHrVc2_Z4guM_h4wrCCS8iyeM7li8ni1zI2eB74YQbw1gfYIY0w8fJpR8npFyFEpB8Dg4.tsOG8i78UU8GPUu7otnNTlnFXjpDYfyojRba6fUK0L0&dib_tag=se&keywords=style+comb&qid=1723257911&sprefix=style+com%2Caps%2C331&sr=8-12

@@ -74,7 +74,16 @@ Triple exponential smoothning
 
 
 
+intern project 
 
+we first ask users to tell us target variable and date columns then ask  date frequency and unit
+now we need to filter data our model can handle onlys single time series data 
+we ask user to enter categorical columns and then ask him to check and uncheck those columns 
+if we checks a columns means he wants to keeps all values in that columns and i he unchecks we ask him which value do he want to keeps for example if columns country is checked we keep it as it is (we have for same date many sales value belonginging to different countries)
+but if he unchecks we ask him which category in that column does he want to keep (he choose usa we remove all other country)
+
+then now we HAVE TO AGGREGATE NUMERICAL VALUES both target and non target ones(if it has to be used as regressor variable)
+we ask him to select numercical columns and afggregation type (mean etc) 
 
 
 
